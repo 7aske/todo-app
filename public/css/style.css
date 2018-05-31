@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Default';
+    src: url(../fonts/default-text.ttf)
+}
+* {
+    font-family: 'Default';
+}
+html,
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #d2d0a4;
+}
+#header {
+	background-color: #a7a265;
+	height: 35px;
+	width: 100%;
+}
+#header button {
+	border: none;
+	height: inherit;
+	vertical-align: middle;
+	text-align: center;
+	width: 100px;
+	background-color: #60b762;
+	color: black;
+	transition: all 200ms;
+	font-weight: 700;
+    cursor: pointer;
+    font-size: 24px;
+}
+#header button:hover {
+	background-color: crimson;
+	margin: 0px;
+}
+.container {
+	width: 100%;
+}
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+	height: 358px;
+	resize: none;
+	border: none;
+	overflow-y: hidden;
+    background-color: #d2d0a4;
+    font-size: 42px;
+    line-height: 0.9em;
+}
+.noteContainer {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 10px #222222;
+	background-color: yellow;
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+.noteContainer p {
+    position: absolute;
+    padding: 0px 5px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 95%;
+    font-size: 20px;
+    line-height: 1em;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.noteContainer button {
+	border: 3px solid rgba(0,0,0,0);
+	position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: black;
+    background-color: yellow;
+	transition: all 200ms;
+    font-weight: 700;
+    font-size: 18px;
+	cursor: pointer;
+    width: 60px;
+    height: 25px;
+    
+    vertical-align: middle;
+    text-align: center;
+}
+    .noteContainer button:first-of-type {
+        left: 100px;
+    }
+    .noteContainer button:hover {
+        text-decoration: underline;
+    }
+#counter {
+    padding-top: 1px;
+    font-size: 24px;
+    float: right;
+    height: 100%;
+    width: 50px;
+}
